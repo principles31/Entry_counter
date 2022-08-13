@@ -1,6 +1,6 @@
-const saveEL = document.getElementById('save-el');
-const countEl = document.getElementById('count-el');
-const count = 0;
+let saveEL = document.getElementById('save-el');
+let countEl = document.getElementById('count-el');
+let count = 0;
 
 function increment() {
   count += 1;
@@ -8,7 +8,7 @@ function increment() {
 }
 
 function save() {
-  const countStr = count + ' - ';
+  countStr = count + ' - ';
   saveEL.textContent += countStr;
   countEl.textContent = 0;
   count = 0;
